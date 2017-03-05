@@ -5,7 +5,7 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${file}.exe",
+            "program": "${workspaceRoot}/test.exe",
             "args": [],
              "preLaunchTask": "g++",
             "stopAtEntry": false,
@@ -28,7 +28,7 @@
             "name": "C++ Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "${file}.exe",
+            "program": "${workspaceRoot}/test.exe",     //${file}.exe
             "processId": "${command：pickProcess}",
             "windows": {
                 "MIMode": "gdb",
