@@ -4,5 +4,15 @@
     "clang.completion.enable": true,
     "clang.cxxflags": [
         "-std=c++11", "-I/path/to/my/include/directory"
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    },
+
+    // "astyle.astylerc": null,
+    "astyle.astylerc": "${workspaceRoot}/.vscode/asytlerc}",
+    "astyle.cmd_options": [
+        "--indent=tab", "--break-blocks"
     ]
+
 }

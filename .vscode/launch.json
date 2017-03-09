@@ -2,19 +2,35 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python3",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "C:/software/Python/Python35-32/python.exe", //${config.python.pythonPath}
+            "program": "${file}",
+            // "cwd": "${workspaceRoot}",
+            // "env": null,
+            // "envFile": "${workspaceRoot}/.env",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        },
+        {
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/test.exe",
+            "program": "${file}.exe",
             "args": [],
-             "preLaunchTask": "g++",
+            "preLaunchTask": "g++",
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
             "environment": [],
             "externalConsole": true,
             "windows": {
                 "MIMode": "gdb",
-                "miDebuggerPath":"c:\\MinGW\\bin\\gdb.exe",
+                "miDebuggerPath": "c:\\MinGW\\bin\\gdb.exe",
                 "setupCommands": [
                     {
                         "description": "Enable pretty-printing for gdb",
@@ -28,7 +44,7 @@
             "name": "C++ Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "${workspaceRoot}/test.exe",     //${file}.exe
+            "program": "${file}.exe", //${file}.exe    ${workspaceRoot}/test.exe
             "processId": "${command：pickProcess}",
             "windows": {
                 "MIMode": "gdb",

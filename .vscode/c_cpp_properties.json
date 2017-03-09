@@ -24,10 +24,15 @@
         },
         {
             "name": "Win32",
-            "includePath": [
-                "C:/MinGW/include/*",
-                "C:/software/Microsoft Visual Studio 12.0/VC/include/*",   
-                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*"              
+            "includePath": [  
+                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++",               
+                "C:/software/Microsoft Visual Studio 12.0/VC/include/*",              
+                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
+                "D:/opencv/build/include",
+                "D:/opencv/build/include/opencv/*",
+                "D:/opencv/build/include/opencv2/*",
+                "D:/opencv/build/x86/vc12/lib/*",
+                "D:/opencv/build/x86/vc12/bin/*"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,

@@ -3,12 +3,17 @@
 */
 {
     "version": "0.1.0",
+    // "command": "PowerShell.exe",
     "command": "g++",
-    "args": ["-g","${file}","-o","${workspaceRoot}/test.exe"],    // 编译命令参数
+    "args": ["-g","${file}","-o","${file}.exe"],    // 编译命令参数
     "isShellCommand": true,
+    "echoCommand": true,
     "problemMatcher": {
         "owner": "cpp",
-        "fileLocation": ["relative", "${workspaceRoot}"],
+        "fileLocation": [
+            "relative",
+            "${workspaceRoot}"
+        ],
         "pattern": {
             "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
             "file": 1,
@@ -19,30 +24,3 @@
         }
     }
 }
-
-
-/*
-//  the tasks of python 
-{  
-    // See http://go.microsoft.com/fwlink/?LinkId=733558  
-    // for the documentation about the tasks.json format  
-    "version": "0.1.0",  
-    "command": "python",  
-    "isShellCommand": true,  
-    "args": ["${file}"],  
-    "showOutput": "always"  
-}
-*/
-
-/*
-    //the tasks of 默认
-{
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "0.1.0",
-    "command": "grunt",
-    "isShellCommand": true,
-    "args": ["--no-color"],
-    "showOutput": "always"
-}
-*/
